@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
-movies=pickle.load(open('title.pkl', 'rb'))
+movies=pickle.load(open('Recommender/title.pkl', 'rb'))
 from sklearn.metrics.pairwise import linear_kernel
 from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf = TfidfVectorizer(stop_words='english')
