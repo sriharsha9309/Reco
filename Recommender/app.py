@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import numpy as np
 st.title("Movie Recommendation System")
-movie_df=pickle.load(open('reco.pkl', 'rb'))
+movie_df=pickle.load(open('https://github.com/sriharsha9309/Reco/blob/main/Recommender/reco.pkl', 'rb'))
 a=set(movie_df['title'])
 movies=pd.DataFrame(a)
 def reco(name):
